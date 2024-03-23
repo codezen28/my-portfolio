@@ -254,7 +254,7 @@ export const education = [
 
 export const projects = [
   {
-    id: 9,
+    id: 5,
     title: "Chit-Chat",
     date: "Jun 2023 - Jul 2023",
     description:
@@ -267,7 +267,7 @@ export const projects = [
     webapp: "https://chit-chat-3xgu.onrender.com",
   },
   {
-    id: 0,
+    id: 6,
     title: "Blood Bank App",
     date: "Apr 2023 - May 2023",
     description:
@@ -291,5 +291,47 @@ export const projects = [
     category: "Frontend",
     github: "https://github.com/codezen28/inshorts-clone",
     webapp: "https://inshorts-clone-app.onrender.com",
+  },
+
+  {
+    id: 2,
+    title: "Keeper App",
+    date: "May 2023",
+    description:
+      "This project is a clone for Google Keep app in which the user can prepare the note with their title.",
+    image:
+      "https://drive.google.com/file/d/1aBTOA0rDnTDqJNtHN0TUFFBcoweT1ipj/view?usp=sharing",
+    tags: ["React Js"],
+    category: "Frontend",
+    github: "https://github.com/codezen28/keeper-app",
+    webapp: "https://cute-florentine-75c329.netlify.app/",
+  },
+
+  {
+    id: 3,
+    title: "Dice Challenge",
+    date: "Nov 2022",
+    description:
+      "This is a dice game project in which random 2 player plays and in which player dice has larger number wins",
+    image:
+      "https://drive.google.com/file/d/1v98_-G6LHwufZYfO3vDg_py3h7VTeZkR/view?usp=sharing",
+    tags: ["HTML", "CSS", "Javascript"],
+    category: "Frontend",
+    github: "https://github.com/codezen28/dice-challenge",
+    webapp: "https://codezen28.github.io/dice-challenge/",
+  },
+
+  {
+    id: 4,
+    title: "Drum Kit",
+    date: "Dec 2022",
+    description:
+      "This is a drum playing app where user can plays the drum by using keyboard and mouse.",
+    image:
+      "https://drive.google.com/file/d/1ywyad5Xa2PYCMb91cayl9vrO7CDHlCij/view?usp=sharing",
+    tags: ["HTML", "CSS", "Javascript"],
+    category: "Frontend",
+    github: "https://github.com/codezen28/drum-kit",
+    webapp: "https://codezen28.github.io/drum-kit/",
   },
 ];
