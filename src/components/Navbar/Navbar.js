@@ -1,126 +1,18 @@
-import React from "react";
-import { Link as linkR } from "react-router-dom";
-import styled from "styled-components";
+import React, { useState } from "react";
+import { NavLink, Link as linkR } from "react-router-dom";
+import styled, { useTheme } from "styled-components";
 import { DiCssdeck } from "react-icons/di";
+import { FaBars } from "react-icons/fa";
+import { Bio } from "../../data/constants";
+import { ButtonContainer, GitHubButton, MobileIcon, MobileLink, MobileMenu, Nav, NavItems, NavLogo, NavbarContainer, Span } from "./NavbarStyledComponents";
 
-const Nav = styled.div`
-  background-color: ${({ theme }) => theme.card_light};
-  height: 80px;
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  @media-screen and (max-width:960px) {
-    transition: 0.8s all ease;
-  }
-`;
-
-const NavContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  height: 60px;
-  z-index: 1;
-  width: 100%;
-  padding: 0 24px;
-  max-width: 1200px;
-`;
-
-const NavLogo = styled(linkR)`
-  width: 80%;
-  padding: 0 6px;
-  display: flex;
-  justify-self: flex-start;
-  cursor: pointer;
-  text-decoration: none;
-  align-items: center;
-  @media screen and (max-width: 640px) {
-    padding: 0 0px;
-  }
-`;
-
-const MobileIcon = styled.div`
-  display: none;
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 50%);
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: ${({ theme }) => theme.text_primary};
-  }
-`;
-
-const NavItems = styled.ul`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-  list-style: none;
-
-  @media-screen and (max-width:768px) {
-    display: none;
-  }
-`;
-
-const NavLink = styled.a`
-  color: ${({ theme }) => theme.primary};
-  font-weight: 500;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    color: ${({ theme }) => theme.white};
-  }
-`;
-
-const ButtonContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 100%;
-  padding: 0 6px;
-  @media-screen and (max-width:640px) {
-    display: none;
-  }
-`;
-
-const GithubButton = styled.button`
-  background-color: transparent;
-  color: ${({ theme }) => theme.primary};
-  border: 1.8px solid ${({ theme }) => theme.primary};
-  border-radius: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  height: 70%;
-  :hover {
-    background-color: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
-  }
-  @media screen and(max-width:640px) {
-    font-size: 0.8rem;
-  }
-`;
-
-export const Span = styled.div`
-  padding: 0 4px;
-  font-weight: bold;
-  font-size: 18px;
-`;
 
 const Navbar = () => {
+  const [isOpen, issetOpen] = useState(false);
+  const theme = useTheme();
   return (
     <Nav>
-      <NavContainer>
+      <NavbarContainer>
         <NavLogo to="/">
           <a
             href="/"
@@ -136,7 +28,13 @@ const Navbar = () => {
             <Span>Portfolio</Span>
           </a>
         </NavLogo>
-        <MobileIcon></MobileIcon>
+        <MobileIcon>
+          <FaBars
+            onClick={() => {
+              issetOpen(!isOpen);
+            }}
+          />
+        </MobileIcon>
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>{" "}
@@ -145,9 +43,65 @@ const Navbar = () => {
           <NavLink href="#education">Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GithubButton>Github Profile</GithubButton>
+          <GitHubButton>Github Profile</GitHubButton>
         </ButtonContainer>
-      </NavContainer>
+      </NavbarContainer>
+      {isOpen && (
+        <MobileMenu isOpen={isOpen}>
+          <MobileLink
+            href="#about"
+            onClick={() => {
+              issetOpen(!isOpen);
+            }}
+          >
+            About
+          </MobileLink>
+          <MobileLink
+            href="#skills"
+            onClick={() => {
+              issetOpen(!isOpen);
+            }}
+          >
+            Skills
+          </MobileLink>
+          <MobileLink
+            href="#experience"
+            onClick={() => {
+              issetOpen(!isOpen);
+            }}
+          >
+            Experience
+          </MobileLink>
+          <MobileLink
+            href="#projects"
+            onClick={() => {
+              issetOpen(!isOpen);
+            }}
+          >
+            Projects
+          </MobileLink>
+          <MobileLink
+            href="#education"
+            onClick={() => {
+              issetOpen(!isOpen);
+            }}
+          >
+            Education
+          </MobileLink>
+          <GitHubButton
+            style={{
+              padding: "10px 16px",
+              background: `${theme.primary}`,
+              color: "white",
+              width: "max-content",
+            }}
+            href={Bio.github}
+            target="_blank"
+          >
+            Github Profile
+          </GitHubButton>
+        </MobileMenu>
+      )}
     </Nav>
   );
 };
