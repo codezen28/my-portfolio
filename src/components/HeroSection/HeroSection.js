@@ -13,7 +13,7 @@ import {
   Title,
 } from "./HeroStyledComponents";
 import { Bio } from "../../data/constants";
-import Typewriter from "typewriter-effect";
+
 import TypewriterComponent from "typewriter-effect";
 import HeroBgAnimation from "../HeroBgAnimation/HeroBgAnimation";
 
