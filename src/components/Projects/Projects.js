@@ -20,8 +20,8 @@ const Projects = ({ openModal, setOpenModal }) => {
       <Wrapper>
         <Title>Projects</Title>
         <Desc>
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
+          I have worked on a wide range of projects. Here are some of my
+          projects.
         </Desc>
         <ToggleButtonGroup>
           {toggle === "all" ? (
@@ -34,51 +34,37 @@ const Projects = ({ openModal, setOpenModal }) => {
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "web app" ? (
+          {toggle === "Frontend" ? (
             <ToggleButton
               active
-              value="web app"
-              onClick={() => setToggle("web app")}
+              value="Frontend"
+              onClick={() => setToggle("Frontend")}
             >
-              WEB APP'S
+              FRONTEND
             </ToggleButton>
           ) : (
-            <ToggleButton value="web app" onClick={() => setToggle("web app")}>
-              WEB APP'S
+            <ToggleButton
+              value="Frontend"
+              onClick={() => setToggle("Frontend")}
+            >
+              FRONTEND
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "android app" ? (
+          {toggle === "Full Stack" ? (
             <ToggleButton
               active
-              value="android app"
-              onClick={() => setToggle("android app")}
+              value="Full Stack"
+              onClick={() => setToggle("Full Stack")}
             >
-              ANDROID APP'S
+              FULL STACK
             </ToggleButton>
           ) : (
             <ToggleButton
-              value="android app"
-              onClick={() => setToggle("android app")}
+              value="Full Stack"
+              onClick={() => setToggle("Full Stack")}
             >
-              ANDROID APP'S
-            </ToggleButton>
-          )}
-          <Divider />
-          {toggle === "machine learning" ? (
-            <ToggleButton
-              active
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
-            >
-              MACHINE LEARNING
-            </ToggleButton>
-          ) : (
-            <ToggleButton
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
-            >
-              MACHINE LEARNING
+              FULL STACK
             </ToggleButton>
           )}
         </ToggleButtonGroup>

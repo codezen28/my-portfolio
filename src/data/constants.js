@@ -228,6 +228,7 @@ export const education = [
     id: 0,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJheWrkwFWkwJaLTXcWwxMucB5OWedCcUySLVuH1xcLA&s",
     school: "Institute of Engineering and Technology, DAVV, Indore",
+    degree: "B.E",
     date: "Nov 2020-June 2024",
     grade: "7.2 CGPA",
     desc: "I am currently pursuing a Bachelor's degree in Information Technology Engineering from Institute of Engineering and Technology, DAVV, Indore. I have completed 7 semesters and have a CGPA of 7.2. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. ",
@@ -236,6 +237,7 @@ export const education = [
     id: 1,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLCxjixAJQwKUDZ7HZlfE0T4tA3mpgPOOhmVTWLp7OQ&s",
     school: "Rani Durgawati Hr.Sec School, Chhatarpur",
+    degree: "Class 12",
     date: "Apr 2018-March 2019",
     grade: "83.8%",
     desc: "I completed my class 12 high school education at Rani Durgawati Hr. Sec School, Chhatarpur, where I studied PCM.",
@@ -244,6 +246,7 @@ export const education = [
     id: 2,
     img: "https://1.bp.blogspot.com/-wplj5DiP8BQ/X0YXEdSyKvI/AAAAAAAAAIc/QVumue6FutkwAb3NMiclPA-QHHAmeE1mwCLcBGAsYHQ/w320-h291/IMG_20200826_095138.jpg",
     school: "Sacred Heart Convent High School, Khajuraho",
+    degree: "Class 10",
     date: "Apr 2016-March 2017",
     grade: "85.8%",
     desc: "I completed my class 10 education at Sacred Heart Convent High School, Khajuraho, where I studied Science with Computer Application.",
@@ -257,8 +260,7 @@ export const projects = [
     date: "Jun 2023 - Jul 2023",
     description:
       "This is real-time chat application in which users can chat with other users in real time environment. It also has features in which users can create groups  and  chat in the group also. This app also has real time notifications feature.",
-    image:
-      "https://drive.google.com/file/d/1g2GShP4EHRv3m01lWawSzN2pf8I1_uhv/view?usp=sharing",
+    image: "https://i.ibb.co/Jt9JQkf/Chit-Chat-Screenshot.png",
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Socket.io"],
     category: "Full Stack",
     github: "https://github.com/codezen28/mern-chat-app",
@@ -270,10 +272,9 @@ export const projects = [
     date: "Apr 2023 - May 2023",
     description:
       "This is a blood bank management app. Here the organization can manage its blood inventory by tracking the in and out of blood. It also has features in which organization can also see the donors who has donated the blood and its quantity and the hospital who has taken how much blood.",
-    image:
-      "https://drive.google.com/file/d/1s9bIA0pZKW1bqKq6KZrLyChvtkEatr6J/view?usp=sharing",
+    image: "https://i.ibb.co/5vtMR2S/Blood-Bank-App-Screenshot.png",
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
-    category: "Full Stack app",
+    category: "Full Stack",
     github: "https://github.com/codezen28/Blood-Bank-App",
     webapp: "https://blood-bank-mern-app-g36z.onrender.com",
   },
@@ -283,8 +284,7 @@ export const projects = [
     date: "March 2024",
     description:
       "This project is a clone for Inshorts-App that displays news in 60 words. It also has a feature to give news according to the category.",
-    image:
-      "https://drive.google.com/file/d/13BiipB5_VKtFD7p7h3rkac5Lfu37hvKU/view?usp=sharing",
+    image: "https://i.ibb.co/8jdNQ1m/Inshorts-App.png",
     tags: ["React Js", "Material UI"],
     category: "Frontend",
     github: "https://github.com/codezen28/inshorts-clone",
@@ -297,8 +297,7 @@ export const projects = [
     date: "May 2023",
     description:
       "This project is a clone for Google Keep app in which the user can prepare the note with their title.",
-    image:
-      "https://drive.google.com/file/d/1aBTOA0rDnTDqJNtHN0TUFFBcoweT1ipj/view?usp=sharing",
+    image: "https://i.ibb.co/MhgqcX1/Keeper-App-Screenshot.png",
     tags: ["React Js"],
     category: "Frontend",
     github: "https://github.com/codezen28/keeper-app",
@@ -311,8 +310,7 @@ export const projects = [
     date: "Nov 2022",
     description:
       "This is a dice game project in which random 2 player plays and in which player dice has larger number wins",
-    image:
-      "https://drive.google.com/file/d/1v98_-G6LHwufZYfO3vDg_py3h7VTeZkR/view?usp=sharing",
+    image: "https://i.ibb.co/hgmgnxd/Dice-Challenge.png",
     tags: ["HTML", "CSS", "Javascript"],
     category: "Frontend",
     github: "https://github.com/codezen28/dice-challenge",
@@ -325,8 +323,7 @@ export const projects = [
     date: "Dec 2022",
     description:
       "This is a drum playing app where user can plays the drum by using keyboard and mouse.",
-    image:
-      "https://drive.google.com/file/d/1ywyad5Xa2PYCMb91cayl9vrO7CDHlCij/view?usp=sharing",
+    image: "https://i.ibb.co/vw6mxGs/Drum-Kit.png",
     tags: ["HTML", "CSS", "Javascript"],
     category: "Frontend",
     github: "https://github.com/codezen28/drum-kit",
